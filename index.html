@@ -57,16 +57,33 @@
         <h1>Ресторан<br/><span class="caps">«Эклектика»</span></h1>
 
         <div class="buttonGroup">
-            <div class="bigButton">
-                <div class="bigButton_backdrop"></div>
-                <a href="./contact/">Забронировать онлайн</a>
-            </div>
+            <a href="./contact/">
+                <div class="bigButton">
+                    <div class="bigButton_backdrop"></div>Забронировать онлайн</div>
+            </a>
             <div class="mobilePromo">
                 Акция
             </div>
         </div>
 
     </main>
+
+    <!--  Всплывающая акция  -->
+    <div id="special-offer">
+        <div class="pic">
+            <div class="shadow">
+                <div class="overlay-text">Акция для двоих</div>
+                <div class="close">X</div>
+            </div>
+        </div>
+        <p>Приглашаем вас отметить День Святого Валентина в «Эклетике» с особенным подарком от ресторана! Забронируйте стол на 14 февраля и наслаждайтесь вечером вдвоем с бесплатной бутылкой шампанского.</p>
+        <p>Проведите романтический вечер в уютной обстановке и наслаждайтесь вкусом вместе с «Эклектикой». Резервируйте столы уже сегодня — места ограничены! 💖</p>
+        <a href="./contact/">
+            <div class="bigButton">Забронировать онлайн</div>
+        </a>
+    </div>
+
+    <button id="open-special-offer">Акция</button>
 
     <!-- Галерея -->
     <!-- Переключение при помощи выбора класса about/values  -->
@@ -96,6 +113,7 @@
             </div>
             <img id="rightReviewArrow" src="./assets/svg/big-right-arrow.svg" />
         </section>
+        <button id="showMore">Показать еще</button>
     </article>
 
     <!-- Контакты -->
@@ -103,9 +121,9 @@
         <div class="galleryPic"></div>
         <div class="contactText">
             <span>Мы открыты:</span><br /><br />Пн-Чт с 18:00 до 23:00<br />Пт с 17:00 до 23:00<br />Сб-Вс с 12:00 до 23:00<br /><br />Москва, ул. Ленина, д.11<a href="tel:+79110000080">+7 (911) 000-00-80</a>
-            <div class="bigButton">
-                <a href="./contact/">Забронировать онлайн</a>
-            </div>
+                <a href="./contact/">
+                    <div class="bigButton">Забронировать онлайн</div>
+                </a>
         </div>
     </article>
 
@@ -124,7 +142,8 @@
     </footer>
 
     <!-- скрипты требующие загрузки всей страницы для своего выполнения-->
-    <script src="./reviews.js" async="false" type="text/javascript"></script>
     <script src="./events.js" async="false" type="text/javascript"></script>
+    <script src="./reviews.js" async="false" type="text/javascript"></script>
+
 </body>
 </html>

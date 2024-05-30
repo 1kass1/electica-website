@@ -26,6 +26,7 @@ $(function(){
         },
     ];
 
+   
     for (let reviewInfo of reviewsData) {
         let reviewCard = document.getElementById('reviewTemplate').content.cloneNode(true);
         reviewCard.querySelector('.reviewPhoto').setAttribute('src', reviewInfo.photo);
@@ -40,4 +41,5 @@ $(function(){
         
         document.getElementById('reviews').appendChild(reviewCard)
     }
+    $(document).trigger('onReviewsCreated');
 });

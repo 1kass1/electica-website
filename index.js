@@ -25,4 +25,17 @@ $(function(){
         reviewsContainer.scrollLeft += offset + 30;
         $('#leftReviewArrow').removeClass('inactive');
     });
+
+    $('#showMore').on('click', function() {
+        $('#reviews .reviewContainer').show();
+        $('#showMore').hide();
+    })
+
+    $('#open-special-offer, .mobilePromo').on('click', function(){
+        $('#special-offer').show();
+    });
+
+    $('#special-offer .close').on('click', function(){
+        $('#special-offer').hide();
+    });
 });
